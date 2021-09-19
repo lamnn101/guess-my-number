@@ -1,0 +1,122 @@
+@import "./reset";
+@import "./global";
+@import "./variable";
+@import "./mixin";
+
+// Background
+body {
+   width: 100vw;
+   height: 100vh;
+   background: linear-gradient(to top right, #1a2a6c, #b21f1f, #fdbb2d)
+      no-repeat;
+}
+
+// Header
+.header {
+   &__inner {
+      @include flex(rowcenbw);
+      padding: 24px 16px;
+      .btn-play-again {
+         @include flex(rowcen);
+         margin-left: auto;
+         border: none;
+         color: #fff;
+         padding: 10px 16px;
+         background-color: transparent;
+         letter-spacing: 1.6px;
+         border-radius: 8px;
+         transition: background-color 0.3s;
+         img {
+            width: 28px;
+            margin-right: 16px;
+         }
+         &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+         }
+      }
+   }
+   &__item {
+      @include flex(rowcen);
+      margin-right: 60px;
+      letter-spacing: 1.6px;
+      .point {
+         display: block;
+         width: 40px;
+         margin-left: 12px;
+      }
+   }
+}
+
+// Body
+.body {
+   width: 100vw;
+   height: calc(100vh - 160px);
+   @include flex(cencen);
+
+   &__inner {
+      @include flex(colcen);
+      text-align: center;
+      gap: 60px;
+   }
+   &__heading {
+      @include flex(colcen);
+      .title {
+         font-size: 44px;
+         font-weight: 600;
+         margin-bottom: 36px;
+         letter-spacing: 5px;
+      }
+      .secret-number {
+         @include flex(cencen);
+         width: 180px;
+         height: 180px;
+         background-color: rgba(255, 255, 255, 0.1);
+         border-radius: 50%;
+         font-size: 72px;
+      }
+   }
+   &__description {
+      .message {
+         font-size: 28px;
+         letter-spacing: 5px;
+         margin-bottom: 20px;
+      }
+      .instruction {
+         font-size: 18px;
+      }
+   }
+   &__action {
+      @include flex(rowcen);
+      .guess {
+         color: #fff;
+         width: 280px;
+         padding: 15px 24px;
+         line-height: 30px;
+         border: 1px solid #fff;
+         border-right: none;
+         background-color: transparent;
+         border-radius: 8px 0px 0px 8px;
+         transition: background-color 0.3s;
+         &::placeholder {
+            color: #fff;
+         }
+         &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+         }
+      }
+      .btn-check {
+         font-weight: 600;
+         line-height: 30px;
+         padding: 15px 28px;
+         border-radius: 0px 8px 8px 0px;
+         border: 1px solid #fff;
+         background-color: transparent;
+         color: #fff;
+         letter-spacing: 1px;
+         transition: background-color 0.3s;
+         &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+         }
+      }
+   }
+}

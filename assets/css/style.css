@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* // ============  Responsive Mixin (Mobile First)  ============ //
+
+@mixin sm {
+    @media screen and (min-width: 576px) {
+        @content;
+    }
+}
+@mixin md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin lg {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+@mixin xl {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+*/
+.container {
+  max-width: 1172px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 752px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 572px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* // ============  Responsive Mixin (Mobile First)  ============ //
+
+@mixin sm {
+    @media screen and (min-width: 576px) {
+        @content;
+    }
+}
+@mixin md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin lg {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+@mixin xl {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+*/
+body {
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, left bottom, right top, from(#1a2a6c), color-stop(#b21f1f), to(#fdbb2d)) no-repeat;
+  background: linear-gradient(to top right, #1a2a6c, #b21f1f, #fdbb2d) no-repeat;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 24px 16px;
+}
+
+.header__inner .btn-play-again {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  border: none;
+  color: #fff;
+  padding: 10px 16px;
+  background-color: transparent;
+  letter-spacing: 1.6px;
+  border-radius: 8px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.header__inner .btn-play-again img {
+  width: 28px;
+  margin-right: 16px;
+}
+
+.header__inner .btn-play-again:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.header__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 60px;
+  letter-spacing: 1.6px;
+}
+
+.header__item .point {
+  display: block;
+  width: 40px;
+  margin-left: 12px;
+}
+
+.body {
+  width: 100vw;
+  height: calc(100vh - 160px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 60px;
+}
+
+.body__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body__heading .title {
+  font-size: 44px;
+  font-weight: 600;
+  margin-bottom: 36px;
+  letter-spacing: 5px;
+}
+
+.body__heading .secret-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 180px;
+  height: 180px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  font-size: 72px;
+}
+
+.body__description .message {
+  font-size: 28px;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+.body__description .instruction {
+  font-size: 18px;
+}
+
+.body__action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body__action .guess {
+  color: #fff;
+  width: 280px;
+  padding: 15px 24px;
+  line-height: 30px;
+  border: 1px solid #fff;
+  border-right: none;
+  background-color: transparent;
+  border-radius: 8px 0px 0px 8px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.body__action .guess::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.body__action .guess:-ms-input-placeholder {
+  color: #fff;
+}
+
+.body__action .guess::-ms-input-placeholder {
+  color: #fff;
+}
+
+.body__action .guess::placeholder {
+  color: #fff;
+}
+
+.body__action .guess:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.body__action .btn-check {
+  font-weight: 600;
+  line-height: 30px;
+  padding: 15px 28px;
+  border-radius: 0px 8px 8px 0px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  letter-spacing: 1px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.body__action .btn-check:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+/*# sourceMappingURL=style.css.map */

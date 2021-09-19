@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+         rel="stylesheet"
+      />
+      <!-- CSS -->
+      <link rel="stylesheet" href="./assets/css/style.css" />
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Guess My Number!</title>
+   </head>
+   <body>
+      <header class="header">
+         <div class="container">
+            <div class="header__inner">
+               <span class="header__item"
+                  >SCORE: <span class="point score">20</span></span
+               >
+               <span class="header__item"
+                  >HIGHSCORE: <span class="point highscore">0</span></span
+               >
+               <button class="btn-play-again">
+                  <img src="./assets/img/icon-refresh.svg" alt="" />
+                  PLAY AGAIN
+               </button>
+            </div>
+         </div>
+      </header>
+      <div class="body">
+         <div class="container">
+            <div class="body__inner">
+               <div class="body__heading">
+                  <h1 class="title">GUESS MY NUMBER</h1>
+                  <h2 class="secret-number">?</h2>
+               </div>
+               <div class="body__description">
+                  <p class="message">“START GUESSING!”</p>
+                  <p class="instruction">(A number between 1 and 20)</p>
+               </div>
+               <div class="body__action">
+                  <input
+                     type="number"
+                     placeholder="Enter number"
+                     class="guess"
+                  />
+                  <button class="btn-check">CHECK</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="./script/script.js"></script>
+   </body>
+</html>

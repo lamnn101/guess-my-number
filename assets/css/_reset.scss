@@ -1,0 +1,42 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Montserrat", sans-serif;
+   font-size: 20px;
+   color: #ffffff;
+}
+
+input,
+button,
+select,
+textarea {
+   font-family: "Montserrat", sans-serif;
+   font-size: 20px;
+   outline: none;
+}
+
+input {
+   line-height: normal;
+}
+
+button {
+   cursor: pointer;
+}
+
+a {
+   text-decoration: none;
+}
+
+img {
+   max-width: 100%;
+   display: block;
+}

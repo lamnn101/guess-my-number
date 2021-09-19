@@ -1,0 +1,20 @@
+@import "./mixin";
+@import "./variable";
+
+.container {
+    max-width: 1172px;
+    padding: 0 16px;
+    margin: 0 auto;
+    @include lg {
+        max-width: 992px;
+    }
+    @include md {
+        max-width: 752px;
+    }
+    @include sm {
+        max-width: 572px;
+    }
+    @include xs {
+        width: 100%;
+    }
+}
