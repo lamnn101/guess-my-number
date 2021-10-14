@@ -6,7 +6,7 @@
 // Background
 body {
    width: 100vw;
-   height: 100vh;
+   min-height: 100vh;
    background: linear-gradient(to top right, #1a2a6c, #b21f1f, #fdbb2d)
       no-repeat;
 }

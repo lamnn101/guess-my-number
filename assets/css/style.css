@@ -121,7 +121,7 @@ img {
 */
 body {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background: -webkit-gradient(linear, left bottom, right top, from(#1a2a6c), color-stop(#b21f1f), to(#fdbb2d)) no-repeat;
   background: linear-gradient(to top right, #1a2a6c, #b21f1f, #fdbb2d) no-repeat;
 }
